@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $('#sidebar').height($(window).height());
+  $('#home').height($(window).height());
+  
+    // document.getElementById('sidebar').height = $(window).height();
+    alert(document.getElementById('sidebar').height);
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
         off(this.id);
@@ -10,16 +15,18 @@ $(document).ready(function () {
           on('sidebarExpand');
         }
     });
-    $('#sidebarExpand').on('click', function () {
+
+  $('#sidebarExpand').on('click', function () {
       $('#sidebar').toggleClass('active');
       off(this.id);   
       on('sidebarCollapse');
   });
+
   $('#sidebar-expand-sm').on('click', function () {
     $('#sidebar').toggleClass('active');
     off(this.id);
     on('sidebarCollapse');
-});
+  });
 });
 
 //typing text

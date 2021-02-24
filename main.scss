@@ -89,7 +89,6 @@ a:focus {
     top: 0;
     min-width: 350px;
     max-width: 350px;
-    height: 100vh;
     // border-radius: 0px 50px 50px 0px;
     background: linear-gradient( rgba(28, 34, 54, 0.941), rgba(28, 34, 54, 0.94) ), url('res/img/sidebar-bg.jpg');
     background-size: cover;
@@ -255,7 +254,7 @@ a:focus {
 
 #home{
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     // background-color: white;
     // background-image: url("res/doodle/22278a7d21fd9fa0/Sleeping_cat_clip_art.svg"),
     //  url("res/doodle/2efeb4e0d5fe236f/minimalist-monitor-and-computer.svg"),
@@ -306,9 +305,9 @@ a:focus {
         bottom: 0;
         margin: auto;
         text-align: center;
-        position: relative;
-        top: 55%;
-        transform: translateY(-55%);
+        position: absolute;
+        // top: 55%;
+        // transform: translateY(-55%);
         .bounce{
             width: 25px;
             height: 25px;
