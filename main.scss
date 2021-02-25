@@ -9,6 +9,34 @@ $color-bg-dark : #111522;
 $color-text-dark : grey;
 $color-text-light : lightgrey;
 $color-bg-light : #141a2c;
+/*
+preloader
+*/
+.pre-loader {
+    background-color: $color-bg-dark;
+    color: $color-text-light;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .preload-wrapper{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+
+        p{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+      }
+  }
 
 body {
     /* background-image: url("banner_img.png");
@@ -255,19 +283,6 @@ a:focus {
 #home{
     width: 100%;
     // height: 100vh;
-    // background-color: white;
-    // background-image: url("res/doodle/22278a7d21fd9fa0/Sleeping_cat_clip_art.svg"),
-    //  url("res/doodle/2efeb4e0d5fe236f/minimalist-monitor-and-computer.svg"),
-    //   url("res/doodle/4b1e13b153307df1/Chess_Game_clip_art.svg"),
-    //    linear-gradient(to bottom,  rgba(255,255,255,0), 40%,rgba(255,255,255,1) 60%), url("res/doodle/c8c8691d75670713/Chess_Piece_Rook_clip_art.svg");
-    // background-size: 20%, 20%, 100%, 100%, 50px;
-    // background-repeat: no-repeat, no-repeat, no-repeat, repeat-x,repeat;
-    // background-position: 5% 40%, 95% 60%, center bottom;
-
-    // #myVideo{
-    //     width: 100%;
-    //     height: 100%;
-    // }
 
     background : linear-gradient( rgba(28, 34, 54, 0.7), rgba(28, 34, 54, 0.6) ), url('res/img/949966.jpg');
     background-repeat: no-repeat;

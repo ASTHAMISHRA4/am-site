@@ -1,9 +1,15 @@
 $(document).ready(function () {
+
+'use strict';
+$(window).on('load', function () {
+    if ($(".pre-loader").length > 0)
+    {
+        $(".pre-loader").remove();
+    }
+});
   $('#sidebar').height($(window).height());
   $('#home').height($(window).height());
   
-    // document.getElementById('sidebar').height = $(window).height();
-    alert(document.getElementById('sidebar').height);
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
         off(this.id);

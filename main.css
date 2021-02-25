@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap");
+/*
+preloader
+*/
+.pre-loader {
+  background-color: #111522;
+  color: lightgray;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.preload-wrapper{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.preload-wrapper p{
+  font-size: 1.5em;
+  text-align: center;
+}
+.preload-wrapper img{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+/* ------------------------------ */
+
+
 body {
   /* background-image: url("banner_img.png");
   background-size: contain;
