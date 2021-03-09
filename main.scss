@@ -47,6 +47,7 @@ body {
     color: $color-text-dark;
     background-color: $color-bg-dark;
     font-family: 'Varela', sans-serif;
+    display: flex;
     position: relative; 
 }
 
@@ -113,6 +114,7 @@ a:focus {
     align-items: stretch;
 } 
 #sidebar {
+    display: flex;
     position: sticky;
     top: 0;
     min-width: 350px;

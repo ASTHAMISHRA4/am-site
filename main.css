@@ -37,6 +37,7 @@ body {
   color: grey;
   background-color: #111522;
   font-family: "Varela", sans-serif;
+  display: flex;
   position: relative;
 }
 
@@ -146,6 +147,7 @@ a:focus {
 }
 
 #sidebar {
+  display: flex;
   position: sticky;
   top: 0;
   min-width: 350px;
