@@ -5,30 +5,28 @@ preloader
 */
 .pre-loader {
   background-color: #111522;
-  color: lightgray;
+  color: lightgrey;
   position: fixed;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
 }
-.preload-wrapper{
+.pre-loader .preload-wrapper {
   position: relative;
   width: 300px;
   height: 300px;
   margin: auto;
 }
-.preload-wrapper p{
+.pre-loader .preload-wrapper p {
   font-size: 1.5em;
   text-align: center;
 }
-.preload-wrapper img{
+.pre-loader .preload-wrapper img {
   width: 200px;
   height: 200px;
   margin: auto;
 }
-/* ------------------------------ */
-
 
 body {
   /* background-image: url("banner_img.png");

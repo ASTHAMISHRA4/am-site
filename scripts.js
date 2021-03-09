@@ -7,8 +7,8 @@ $(window).on('load', function () {
         $(".pre-loader").remove();
     }
 });
-  $('#sidebar').height($(window).height());
-  $('#home').height($(window).height());
+  $('#sidebar').height($(window).innerHeight());
+  $('#home').height($(window).innerHeight());
   
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
