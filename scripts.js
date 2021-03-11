@@ -15,7 +15,7 @@ $(window).on('load', function () {
         off(this.id);
        
         if ( $(window).width() < 992) {     
-          on('sidebar-expand-sm');
+          on('navbar-expand-btn');
         }
         else{
           on('sidebarExpand');
@@ -28,10 +28,13 @@ $(window).on('load', function () {
       on('sidebarCollapse');
   });
 
-  $('#sidebar-expand-sm').on('click', function () {
-    $('#sidebar').toggleClass('active');
+  $('#navbar-expand-btn').on('click', function () {
     off(this.id);
-    on('sidebarCollapse');
+    on('collapsibleNavbar');
+  });
+  $('#collapsibleNavbar').on('click', function () {
+    off(this.id);
+    on('navbar-expand-btn');
   });
 });
 

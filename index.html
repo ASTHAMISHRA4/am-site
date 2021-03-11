@@ -97,24 +97,76 @@
         <!-- Page Content  -->
         <div class="container-fluid" id="content">
 
-            <!-- Header -->
-
-            <button type="button" id="sidebar-expand-sm" class="btn btn-dark bounce">
-                <i class="fas fa-align-left icon"></i>
-            </button>
-
+            <nav class="navbar" id="collapsibleNavbar">
+                
+                    <ul class="list-unstyled components">
+                        <li class="mt-2">
+                            <a href="#home" class="nav-link">
+                                <i class="fas fa-home icon"></i>
+                                <span class="ml-2 menu-item">Home</span> 
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#about" class="nav-link">
+                                <i class="fa fa-user icon"></i>
+                                <span class="ml-2 menu-item">&nbsp;About</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#education" class="nav-link">
+                                <i class="fa fa-graduation-cap icon"></i>
+                                <span class="ml-2 menu-item">Education</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#skills" class="nav-link">
+                                <i class="fas fa-code icon"></i>
+                                <span class="ml-2 menu-item">Skills</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#experience" class="nav-link">
+                                <i class="fa fa-laptop icon"></i>
+                                <span class="ml-2 menu-item">Experience</span> 
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                                <i class="fas fa-image"></i>
+                                <span class="ml-4 menu-item">&nbsp;Portfolio</span>
+                            </a>
+                        </li> -->
+                        <li class="mt-2">
+                            <a href="#blog" class="nav-link">
+                                <i class="fa fa-podcast icon"></i>
+                                <span class="ml-2 menu-item">&nbsp;Blog</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#contact" class="nav-link">
+                                <i class="fa fa-paper-plane icon"></i>
+                                <span class="ml-2 menu-item">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+            
+                <button type="button" id="navbarCollapse" class="btn btn-lg w-100 mt-2">
+                    <i class="fas fa-angle-double-up icon"></i>
+                </button> 
+            </nav>
+              
             <div id="home">
-                <!-- <video autoplay muted loop id="myVideo">
-                    <source src="res/video/vid_typing.mp4" type="video/mp4">
-                </video> -->
+                <button type="button" id="navbar-expand-btn" class="btn btn-dark bounce">
+                    <i class="fas fa-align-left icon"></i>
+                </button>
                 <div class="home-content">
                         <img src="res/img/sidebar-img.jpg" class="img-fluid rounded-circle" id="home-img" width="200" height="200" onmouseover='onHover("#home-img","res/img/dp-infocus.gif");' onmouseout='offHover("#home-img","res/img/sidebar-img.jpg");'/>
                         <h1 class="mt-4 name">ASTHA <span id = "surname">MISHRA</span></h1>
                         <h4 class="mt-3">I'm a <span id = "changeText">Software Developer</span></h4>
                 </div>
-                <div class="scroll-icon">
+                <!-- <div class="scroll-icon">
                     <a href="#about"><i class="fas fa-angle-double-down bounce"></i></a>
-                </div>
+                </div> -->
                 
             </div>
 

@@ -39,16 +39,10 @@ preloader
   }
 
 body {
-    /* background-image: url("banner_img.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right; */
     cursor: url("res/cur/cursor_g.cur"), auto;
     color: $color-text-dark;
     background-color: $color-bg-dark;
     font-family: 'Varela', sans-serif;
-    display: flex;
-    position: relative; 
 }
 
 p {
@@ -114,7 +108,6 @@ a:focus {
     align-items: stretch;
 } 
 #sidebar {
-    display: flex;
     position: sticky;
     top: 0;
     min-width: 350px;
@@ -272,7 +265,7 @@ a:focus {
 ----------------------------------------------------- */
 
 #content {
-    width: 100vw;
+    // width: 100vw;
     min-height: 100vh;
     transition: all 0.3s; 
     padding-right: 0px;
@@ -281,16 +274,26 @@ a:focus {
         color: $color-text-light;
     }
 }
-
+#collapsibleNavbar{
+    display: none;
+    li{
+        border-bottom: 1px solid #1f2742;
+    }
+    #navbarCollapse{
+        background-color: transparent;
+        margin: auto;
+        border-top: 1px solid $color-highlight;
+    }
+}
 #home{
-    width: 100%;
-    // height: 100vh;
+    // width: 100%;
+    height: 100vh;
 
     background : linear-gradient( rgba(28, 34, 54, 0.7), rgba(28, 34, 54, 0.6) ), url('res/img/949966.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin : auto;
-
+    text-align: center;
     .home-content{
         position: relative;
         top: 50%;
@@ -319,12 +322,8 @@ a:focus {
     }
 
     .scroll-icon{
+        position: relative;
         bottom: 0;
-        margin: auto;
-        text-align: center;
-        position: absolute;
-        // top: 55%;
-        // transform: translateY(-55%);
         .bounce{
             width: 25px;
             height: 25px;
@@ -899,11 +898,10 @@ a:focus {
         width: 50px;
         font-size: 1em;
     }
-    #sidebar-expand-sm{
+    #navbar-expand-btn{
         display: block;
         width: 40px;
         height: 40px;
-        position: fixed;
         left:0;
         background-color: $color-bg-dark;
     }
@@ -1056,7 +1054,7 @@ a:focus {
         width: 80vw;
         margin: auto;
     }
-    #sidebar-expand-sm{
+    #navbar-expand-btn{
         display: none;
     }
     #experience{
