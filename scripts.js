@@ -31,6 +31,7 @@ $(window).on('load', function () {
   $('#navbar-expand-btn').on('click', function () {
     off(this.id);
     on('collapsibleNavbar');
+    window.scrollTo(0, 0);
   });
   $('#collapsibleNavbar').on('click', function () {
     off(this.id);
