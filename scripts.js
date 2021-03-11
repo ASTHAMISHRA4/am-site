@@ -122,6 +122,17 @@ function off(id) {
   document.getElementById(id).style.display = "none";
 }
 
+function onOverlay(id)
+{
+  on(id);
+  $("body").addClass("noscroll");
+}
+
+function offOverlay(id)
+{
+  off(id);
+  $("body").removeClass("noscroll");
+}
 //profile pic
 function onHover(id,img)
 {

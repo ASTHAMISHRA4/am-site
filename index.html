@@ -209,7 +209,7 @@
                                 </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-right-wrapper education-first">
-                            <div class="education-text education-text-right education-text-first" onclick="on('overly-ed1')">
+                            <div class="education-text education-text-right education-text-first" onclick="onOverlay('overly-ed1')">
                                 <h4>PG Diploma in Advanced Computing</h4>
                                 <h5>CDAC ACTS</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Pune , India<br>
@@ -221,7 +221,7 @@
                     <div class="row">
                         
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-left-wrapper education-second">
-                            <div class="education-text education-text-left education-text-second " onclick="on('overly-ed2')">
+                            <div class="education-text education-text-left education-text-second " onclick="onOverlay('overly-ed2')">
                                 <h4>Bachelor of Technology</h4>
                                 <h5>Computer Science & Engineering</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Raipur , India<br>
@@ -372,7 +372,7 @@
                                 </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-right-wrapper experience-first">
-                            <div class="experience-text experience-text-right experience-text-first" onclick="on('overlay-ex2')">
+                            <div class="experience-text experience-text-right experience-text-first" onclick="onOverlay('overlay-ex2')">
                                 <h4>Software Engineer - I</h4>
                                 <h5>ICU Medical India LLP</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Chennai , India<br>
@@ -385,7 +385,7 @@
                     <div class="row">
                         
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-left-wrapper experience-second experience-second-left">
-                            <div class="experience-text experience-text-left experience-text-second" onclick="on('overlay-ex1')">
+                            <div class="experience-text experience-text-left experience-text-second" onclick="onOverlay('overlay-ex1')">
                                 <h4>Graduate Engineer Trainee</h4>
                                 <h5>ICU Medical India LLP</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Chennai , India<br>
@@ -590,10 +590,10 @@
         </div>
 
         <!-- Overlay -->
-        <div id="overly-ed1" class="overlay" onclick="off('overly-ed1')">
+        <div id="overly-ed1" class="overlay" onclick="offOverlay('overly-ed1')">
             <div class="container overlay-wrapper">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg5 col-xl-5">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div class="row img-wrapper">
                             <img src="res/img/CDAC-LOGO.png">
                         </div>
@@ -667,10 +667,10 @@
             </div>
         </div>
 
-        <div id="overly-ed2" class="overlay" onclick="off('overly-ed2')">
+        <div id="overly-ed2" class="overlay" onclick="offOverlay('overly-ed2')">
             <div class="container overlay-wrapper">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg5 col-xl-5">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div class="row img-wrapper">
                             <img src="res/img/itmu.png">
                         </div>
@@ -747,10 +747,10 @@
             </div>
         </div>
 
-        <div id="overlay-ex1" class="overlay" onclick="off('overlay-ex1')">
+        <div id="overlay-ex1" class="overlay" onclick="offOverlay('overlay-ex1')">
             <div class="container overlay-wrapper">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg5 col-xl-5">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div class="row img-wrapper">
                             <img src="res/img/icu-medical-plum-360-infusion-pump.jpg">
                         </div>
@@ -810,7 +810,7 @@
             </div>
         </div>
 
-        <div id="overlay-ex2" class="overlay" onclick="off('overlay-ex2')">
+        <div id="overlay-ex2" class="overlay" onclick="offOverlay('overlay-ex2')">
             <div class="container-fluid overlay-wrapper ml-4 mr-4">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 hidden-col">

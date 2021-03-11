@@ -271,6 +271,10 @@ a:focus {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+.noscroll {
+  overflow: hidden;
+}
+
 #content {
   min-height: 100vh;
   transition: all 0.3s;
@@ -769,9 +773,8 @@ a:focus {
 ----------------------------------------------------- */
 .overlay {
   position: fixed;
+  overflow-y: scroll;
   display: none;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -780,13 +783,6 @@ a:focus {
   z-index: 2;
   color: #c0b3b3;
   font-family: "Dosis", sans-serif;
-}
-.overlay .overlay-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 .overlay .overlay-wrapper .highlight {
   color: #61bea1;
@@ -1020,6 +1016,14 @@ a:focus {
   }
 }
 @media (min-width: 992px) {
+  .overlay-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
   #about, #education, #contact, #skills, .skills-personal-wrapper, #blog-wrapper, #interest-wrapper {
     width: 80vw;
     margin: auto;
