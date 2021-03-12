@@ -705,26 +705,6 @@ a:focus {
     } 
 }
 
-#footer{
-    font-size: 0.8em;
-     
-     .footer-content{
-         background-color: $color-bg-light;
-
-         button{
-             margin: 5px;
-             background: transparent;
-             color: $color-highlight;
-             border: none;
-         }
-         button:hover{
-             background: $color-highlight;
-             color: $color-bg-dark;
-             
-         }
-     }
- }
-
 /* ---------------------------------------------------
     CONNECT ICONS STYLE
 ----------------------------------------------------*/
