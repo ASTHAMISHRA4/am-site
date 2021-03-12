@@ -209,7 +209,7 @@
                                 </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-right-wrapper education-first">
-                            <div class="education-text education-text-right education-text-first" onclick="onOverlay('overly-ed1')">
+                            <div class="education-text education-text-right education-text-first" onclick="onOverlay('overlay-ed1')">
                                 <h4>PG Diploma in Advanced Computing</h4>
                                 <h5>CDAC ACTS</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Pune , India<br>
@@ -221,7 +221,7 @@
                     <div class="row">
                         
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-left-wrapper education-second">
-                            <div class="education-text education-text-left education-text-second " onclick="onOverlay('overly-ed2')">
+                            <div class="education-text education-text-left education-text-second " onclick="onOverlay('overlay-ed2')">
                                 <h4>Bachelor of Technology</h4>
                                 <h5>Computer Science & Engineering</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Raipur , India<br>
@@ -590,7 +590,7 @@
         </div>
 
         <!-- Overlay -->
-        <div id="overly-ed1" class="overlay" onclick="offOverlay('overly-ed1')">
+        <div id="overlay-ed1" class="overlay">
             <div class="container overlay-wrapper">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
@@ -655,19 +655,18 @@
                                 <span class="tech">HTML</span>
                                 <span class="tech">CSS</span>
                             </p>
-
-                        </p>
-                        
-                            
-                        
-
+                        </p>     
                         </div>
                     </div>
                 </div>
+                <div class="close-overlay">
+                    <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ed1')"></i>
+                </div>
             </div>
+
         </div>
 
-        <div id="overly-ed2" class="overlay" onclick="offOverlay('overly-ed2')">
+        <div id="overlay-ed2" class="overlay">
             <div class="container overlay-wrapper">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
@@ -744,10 +743,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="close-overlay">
+                    <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ed2')"></i>
+                </div>
             </div>
         </div>
 
-        <div id="overlay-ex1" class="overlay" onclick="offOverlay('overlay-ex1')">
+        <div id="overlay-ex1" class="overlay">
             <div class="container overlay-wrapper">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
@@ -808,9 +810,12 @@
                     </div>
                 </div>
             </div>
+            <div class="close-overlay">
+                <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ex1')"></i>
+            </div>
         </div>
 
-        <div id="overlay-ex2" class="overlay" onclick="offOverlay('overlay-ex2')">
+        <div id="overlay-ex2" class="overlay">
             <div class="container-fluid overlay-wrapper ml-4 mr-4">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 hidden-col">
@@ -898,6 +903,10 @@
                         </p>  
                     </div>
                 </div>
+             
+            </div>
+            <div class="close-overlay">
+                <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ex2')"></i>
             </div>
         </div>
 
