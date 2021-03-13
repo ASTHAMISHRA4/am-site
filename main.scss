@@ -102,7 +102,6 @@ a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -680,13 +679,16 @@ a:focus {
     }
 
     .contact-field{
-        padding: 1%;
-        width: 95%;
-        background-color: $color-bg-dark;
-        border-color:$color-text-dark;
         margin: 2%;
-        color: $color-text-light;
-        border-radius: 5%;
+        padding: 1%;
+        input, textarea{
+            width: 95%;
+            border-radius: 5%;
+            padding: 1%;
+            background-color: $color-bg-dark;
+            border-color:$color-text-dark;
+            color: $color-text-light;
+        }
     }
 
     .contact-button
@@ -703,6 +705,11 @@ a:focus {
                 color: $color-text-dark;
         }
     } 
+    .errorMsg{
+        font-size: 1em;
+        color: red;
+        padding-left: 1%;
+    }
 }
 
 /* ---------------------------------------------------
