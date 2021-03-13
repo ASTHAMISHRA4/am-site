@@ -64,20 +64,11 @@ function scrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-//Contact Form
-var fields = {}
-function sendContact(){
-   fields.name = document.getElementById('name');
-   fields.email = document.getElementById('email');
-   fields.subject = document.getElementById('subject');
-   fields.message = document.getElementById('message');
+//------------ Contact Form -----------------------------//
 
-   return isValid();
-}
-
-function isNotEmpty(value) {
-  if (value == null || typeof value == 'undefined' ) return false;
-  return (value.length > 0);
+function isEmpty(value) {
+  if (value == null || value == 'undefined' || value == "") return true;
+  return (value.length == 0);
  }
 
  function isEmail(email) {
@@ -85,28 +76,79 @@ function isNotEmpty(value) {
   return regex.test(String(email).toLowerCase());
 }
 
-function fieldValidation(field, validationFunction) {
-  if (field == null) return false;
- 
-  var valid = validationFunction(field.value);
-  if(!valid)
+var fields = {};
+function sendContact() {
+  fields.name = document.getElementById('userName');
+  fields.email = document.getElementById('email');
+  fields.subject = document.getElementById('subject');
+  fields.message = document.getElementById('message');
+  var valid = isValid() == 0 ? false:true;
+	return valid;
+}
+
+function validateName() {
+  var valid = true;
+  var value = fields.name.value;
+  document.getElementById('invalidName').innerHTML = "";
+	if( isEmpty(value))
   {
-    alert("Invalid Value of "+field.name + ". Please Enter Valid Value and Try Again!!!")
+    valid = false;
+    document.getElementById('invalidName').innerHTML = "Name is Required";
   }
   return valid;
+}
+
+function validateEmail() {
+  var valid = true;
+  var value = fields.email.value;
+  document.getElementById('invalidEmail').innerHTML = "";
+  if( isEmpty(value))
+  {
+    valid = false;
+    document.getElementById('invalidEmail').innerHTML = "Email is Required";
   }
+  else{
+    valid = isEmail(value);
+    if(!valid)
+    document.getElementById('invalidEmail').innerHTML = "Invalid Email";
+  }
+  return valid;
+}
+
+function validateSubject() {
+  var valid = true;
+  var value = fields.subject.value;
+  document.getElementById('invalidSubject').innerHTML = "";
+	if( isEmpty(value))
+  {
+    valid = false;
+    document.getElementById('invalidSubject').innerHTML = "Subject is Required";
+  }
+  return valid;
+}
+
+function validateMsg() {
+  var valid = true;
+  var value = fields.message.value;
+  document.getElementById('invalidMsg').innerHTML = "";
+	if( isEmpty(value))
+  {
+    valid = false;
+    document.getElementById('invalidMsg').innerHTML = "Message is Required";
+  }
+  return valid;
+}
 
  function isValid() {
   var valid = true;
-  
-  valid &= fieldValidation(fields.name, isNotEmpty);
-  valid &= fieldValidation(fields.email, isEmail);
-  valid &= fieldValidation(fields.subject, isNotEmpty);
-  valid &= fieldValidation(fields.message, isNotEmpty);
+  valid &= validateName();
+  valid &= validateEmail();
+  valid &= validateSubject();
+  valid &= validateMsg();
   return valid;
-
  }
 
+ //-----------------------//
 
  //popover
  $(function () {

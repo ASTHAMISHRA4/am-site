@@ -697,13 +697,16 @@ a:focus {
   filter: grayscale(100%);
 }
 #contact .contact-field {
+  margin: 2%;
   padding: 1%;
+}
+#contact .contact-field input, #contact .contact-field textarea {
   width: 95%;
+  border-radius: 5%;
+  padding: 1%;
   background-color: #111522;
   border-color: grey;
-  margin: 2%;
   color: lightgrey;
-  border-radius: 5%;
 }
 #contact .contact-button {
   width: 100%;
@@ -718,22 +721,10 @@ a:focus {
   background-color: #141a2c;
   color: grey;
 }
-
-#footer {
-  font-size: 0.8em;
-}
-#footer .footer-content {
-  background-color: #141a2c;
-}
-#footer .footer-content button {
-  margin: 5px;
-  background: transparent;
-  color: #288c6c;
-  border: none;
-}
-#footer .footer-content button:hover {
-  background: #288c6c;
-  color: #111522;
+#contact .errorMsg {
+  font-size: 1em;
+  color: red;
+  padding-left: 1%;
 }
 
 /* ---------------------------------------------------
