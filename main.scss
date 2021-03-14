@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 $color-highlight : #288c6c;
 $color-highlight-pri : #9c711f;
@@ -20,12 +21,14 @@ preloader
     width: 100%;
     left: 0;
     top: 0;
+    font-family: 'Indie Flower', cursive;
     .preload-wrapper{
         position: relative;
         width: 300px;
         height: 300px;
         margin: auto;
-
+        top: 30%;
+        transform: translateY(-30%);
         p{
             font-size: 1.5em;
             text-align: center;
