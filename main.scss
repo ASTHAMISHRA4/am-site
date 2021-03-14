@@ -112,19 +112,20 @@ a:focus {
 #sidebar {
     position: sticky;
     top: 0;
-    min-width: 350px;
-    max-width: 350px;
-    // border-radius: 0px 50px 50px 0px;
+    min-width: 80px;
+    max-width: 80px;
     background: linear-gradient( rgba(28, 34, 54, 0.941), rgba(28, 34, 54, 0.94) ), url('res/img/sidebar-bg.jpg');
     background-size: cover;
     color:#808080;
     transition: all 0.3s;
 
     .sidebar-header{
-        padding: 20px;
+        padding: 0px;
+        margin-top:50%;
         p{
             margin:0px auto;
             padding: 0px auto;
+            display: none;
         }
         .sidebar-name{
             color: $color-text-light;
@@ -132,17 +133,33 @@ a:focus {
         }
     }
 
+    .menu-item, .copyright{
+        display: none;
+    }
+
+    #profile-pic{
+        width: 55px;
+        height: 60px;
+        padding: 0px auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
     ul{
-        padding: 20px 0px 0px 0px;
-        // border-bottom: 1px solid $color-highlight;
         li{
             a{
-                padding: 10px;
-                font-size: 1.1em;
-                display: block;
-                padding-left: 30%;
+                padding: 20px 10px;
+                font-size: 1.5em;
+                text-align: center;
                 :hover{
                     color:#395e3f;
+                }
+                i{
+                    display: block;
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -181,10 +198,11 @@ a:focus {
         i{
             size: 1em;
         }
+        display: none;
       }
       #sidebarExpand{
           @extend #sidebarCollapse;
-          display: none;
+          display: inline-block;
       }
   }
 }
@@ -204,14 +222,6 @@ a:focus {
 .center{
     text-align: center;
 }
-
-#profile-pic{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
-    margin-bottom: 5%;
-}
 .copyright{
     // margin-top: 20px;
     font-size: 0.8em;
@@ -223,45 +233,36 @@ a:focus {
 /* SIDEBAR COLLAPSED */
 
 #sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+
+    min-width: 350px;
+    max-width: 350px;
     text-align: left;
-
     .sidebar-header{
-        padding: 0px;
-        margin-top:50%;
-        p{
-            display: none;
-        }
+        margin-top:10%;
+        padding: 20px;
     }
-
     .menu-item, .copyright{
-        display: none;
+        display: inline-block;
     }
-
     #profile-pic{
-        width: 55px;
-        height: 60px;
-        margin: 0px auto;
-        padding: 0px auto;
+        width: 150px;
+        height: 170px;
     }
-
+    p{
+        display: block;
+    }
     ul{
+        padding: 20px 0px 0px 0px;
         li{
             a{
-                padding: 20px 10px;
-                font-size: 1.5em;
-                text-align: center;
-
-                i{
-                    display: block;
-                    margin-bottom: 5px;
-                }
+                padding: 10px;
+                font-size: 1.1em;
+                padding-left: 30%;
+                text-align: left;
             }
         }
     }
 }
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */

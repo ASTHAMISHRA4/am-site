@@ -147,8 +147,8 @@ a:focus {
 #sidebar {
   position: sticky;
   top: 0;
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 80px;
+  max-width: 80px;
   background: linear-gradient(rgba(28, 34, 54, 0.941), rgba(28, 34, 54, 0.94)), url("res/img/sidebar-bg.jpg");
   background-size: cover;
   color: #808080;
@@ -157,27 +157,42 @@ a:focus {
   /* The progress bar (scroll indicator) */
 }
 #sidebar .sidebar-header {
-  padding: 20px;
+  padding: 0px;
+  margin-top: 50%;
 }
 #sidebar .sidebar-header p {
   margin: 0px auto;
   padding: 0px auto;
+  display: none;
 }
 #sidebar .sidebar-header .sidebar-name {
   color: lightgrey;
   font-size: 1.5em;
 }
-#sidebar ul {
-  padding: 20px 0px 0px 0px;
+#sidebar .menu-item, #sidebar .copyright {
+  display: none;
+}
+#sidebar #profile-pic {
+  width: 55px;
+  height: 60px;
+  padding: 0px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 5%;
 }
 #sidebar ul li a {
-  padding: 10px;
-  font-size: 1.1em;
-  display: block;
-  padding-left: 30%;
+  padding: 20px 10px;
+  font-size: 1.5em;
+  text-align: center;
 }
 #sidebar ul li a :hover {
   color: #395e3f;
+}
+#sidebar ul li a i {
+  display: block;
+  margin-bottom: 5px;
 }
 #sidebar .progress-container {
   width: 100%;
@@ -206,12 +221,13 @@ a:focus {
   border: none;
   margin: 0px;
   padding: 0px;
+  display: none;
 }
 #sidebar .sidebarCollapse-wrapper #sidebarCollapse i, #sidebar .sidebarCollapse-wrapper #sidebarExpand i {
   size: 1em;
 }
 #sidebar .sidebarCollapse-wrapper #sidebarExpand {
-  display: none;
+  display: inline-block;
 }
 
 #sidebar .active {
@@ -225,14 +241,6 @@ a:focus {
   text-align: center;
 }
 
-#profile-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-  margin-bottom: 5%;
-}
-
 .copyright {
   font-size: 0.8em;
   position: absolute;
@@ -242,34 +250,32 @@ a:focus {
 
 /* SIDEBAR COLLAPSED */
 #sidebar.active {
-  min-width: 80px;
-  max-width: 80px;
+  min-width: 350px;
+  max-width: 350px;
   text-align: left;
 }
 #sidebar.active .sidebar-header {
-  padding: 0px;
-  margin-top: 50%;
-}
-#sidebar.active .sidebar-header p {
-  display: none;
+  margin-top: 10%;
+  padding: 20px;
 }
 #sidebar.active .menu-item, #sidebar.active .copyright {
-  display: none;
+  display: inline-block;
 }
 #sidebar.active #profile-pic {
-  width: 55px;
-  height: 60px;
-  margin: 0px auto;
-  padding: 0px auto;
+  width: 150px;
+  height: 170px;
+}
+#sidebar.active p {
+  display: block;
+}
+#sidebar.active ul {
+  padding: 20px 0px 0px 0px;
 }
 #sidebar.active ul li a {
-  padding: 20px 10px;
-  font-size: 1.5em;
-  text-align: center;
-}
-#sidebar.active ul li a i {
-  display: block;
-  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  padding-left: 30%;
+  text-align: left;
 }
 
 /* ---------------------------------------------------
