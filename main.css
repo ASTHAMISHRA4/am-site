@@ -422,7 +422,7 @@ a:focus {
   border-radius: 5%;
   padding: 15px;
   box-shadow: 0 12px 19px rgba(74, 93, 150, 0.3), 0 12px 12px rgba(74, 93, 150, 0.22);
-  cursor: url("res/cur/cursor (1).cur"), auto;
+  cursor: url("res/cur/zoom-in.cur"), auto;
 }
 #experience .experience-wrapper .experience-text-first h4 {
   color: #288c6c;
@@ -604,7 +604,7 @@ a:focus {
   border-radius: 5%;
   padding: 15px;
   box-shadow: 0 12px 19px rgba(74, 93, 150, 0.3), 0 12px 12px rgba(74, 93, 150, 0.22);
-  cursor: url("res/cur/cursor (1).cur"), auto;
+  cursor: url("res/cur/zoom-in.cur"), auto;
 }
 #education .education-wrapper .education-right-wrapper {
   margin-left: 40px;
@@ -819,7 +819,7 @@ a:focus {
   right: 0;
 }
 .overlay .close-overlay .icon {
-  cursor: pointer;
+  cursor: url("res/cur/zoom-out.cur"), auto;
 }
 
 /* ---------------------------------------------------

@@ -40,17 +40,32 @@ $(window).on('load', function () {
 });
 
 //typing text
-var text = ["Developer", "Singer", "Coder", "Blogger"];
+var text = ["Singer", "Coder", "Blogger","Developer"];
 var counter = 0;
-var elem = document.getElementById("changeText");
+var elem1 = document.getElementById("changeText");
+var elem2 = document.getElementById("changeTextAbt");
 var inst = setInterval(change, 2000);
-
+var i = 0;
+var speed = 100; 
+var txt ='';
 function change() {
-  elem.innerHTML = text[counter];
+  elem1.innerHTML = "";
+  elem2.innerHTML = "";
+  i=0;
+  txt = text[counter];
+  typeWriter();
   counter++;
   if (counter >= text.length) {
     counter = 0;
-    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
+
+function typeWriter() {
+  if (i < txt.length) {
+    elem1.innerHTML += txt.charAt(i);
+    elem2.innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
   }
 }
 
