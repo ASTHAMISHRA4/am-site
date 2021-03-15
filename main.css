@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-/*
-preloader
-*/
+/* ---------------------------------------------------
+    PRELOADER STYLE
+----------------------------------------------------- */
 .pre-loader {
   background-color: #111522;
   color: lightgrey;
@@ -32,6 +32,7 @@ preloader
   margin: auto;
 }
 
+/* ----------------------------------------------------- */
 body {
   cursor: url("res/cur/cursor_g.cur"), auto;
   color: grey;
@@ -57,6 +58,13 @@ a:focus {
   color: #288c6c;
 }
 
+.center {
+  text-align: center;
+}
+
+/* ---------------------------------------------------
+    ANIMATION STYLE
+----------------------------------------------------- */
 .bounce {
   display: inline-block;
   position: relative;
@@ -169,7 +177,7 @@ a:focus {
   color: lightgrey;
   font-size: 1.5em;
 }
-#sidebar .menu-item, #sidebar .copyright {
+#sidebar .menu-item {
   display: none;
 }
 #sidebar #profile-pic {
@@ -237,17 +245,6 @@ a:focus {
   box-sizing: border-box;
 }
 
-.center {
-  text-align: center;
-}
-
-.copyright {
-  font-size: 0.8em;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
-
 /* SIDEBAR COLLAPSED */
 #sidebar.active {
   min-width: 350px;
@@ -258,7 +255,7 @@ a:focus {
   margin-top: 10%;
   padding: 20px;
 }
-#sidebar.active .menu-item, #sidebar.active .copyright {
+#sidebar.active .menu-item {
   display: inline-block;
 }
 #sidebar.active #profile-pic {
@@ -339,8 +336,10 @@ a:focus {
   color: lightgrey;
 }
 #home .scroll-icon {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  left: 50%;
+  padding: 2%;
 }
 #home .scroll-icon .bounce {
   width: 25px;
@@ -737,6 +736,13 @@ a:focus {
   padding-left: 1%;
 }
 
+#footer {
+  width: 100%;
+  background-color: #141a2c;
+  margin-top: 30px;
+  padding: 10px;
+}
+
 /* ---------------------------------------------------
     CONNECT ICONS STYLE
 ----------------------------------------------------*/
@@ -865,7 +871,7 @@ a:focus {
     margin-right: 0;
     display: block;
   }
-  #sidebar .copyright, #sidebar .menu-item {
+  #sidebar .menu-item {
     display: none;
   }
 
@@ -880,11 +886,6 @@ a:focus {
   #sidebar.active #profile-pic {
     width: 35px;
     height: 40px;
-  }
-
-  .copyright {
-    font-size: 0.6em;
-    margin: 2px;
   }
 
   .connect-icon {
@@ -904,6 +905,9 @@ a:focus {
   #home {
     background-position-x: center;
     background-position-y: bottom;
+  }
+  #home .scroll-icon {
+    left: 45%;
   }
 
   #about, #education, #contact, #experience, #blog-wrapper, #skills-personal, #interest-wrapper {

@@ -10,9 +10,9 @@ $color-bg-dark : #111522;
 $color-text-dark : grey;
 $color-text-light : lightgrey;
 $color-bg-light : #141a2c;
-/*
-preloader
-*/
+/* ---------------------------------------------------
+    PRELOADER STYLE
+----------------------------------------------------- */
 .pre-loader {
     background-color: $color-bg-dark;
     color: $color-text-light;
@@ -39,8 +39,8 @@ preloader
             margin: auto;
         }
       }
-  }
-
+}
+/* ----------------------------------------------------- */
 body {
     cursor: url("res/cur/cursor_g.cur"), auto;
     color: $color-text-dark;
@@ -64,6 +64,12 @@ a:focus {
 .icon{
     color: $color-highlight;
 }
+.center{
+    text-align: center;
+}
+/* ---------------------------------------------------
+    ANIMATION STYLE
+----------------------------------------------------- */
 .bounce {
     display: inline-block;
     position: relative;
@@ -102,6 +108,7 @@ a:focus {
       70% { top: -0.3em; }
       100% { top: 0; }
   }
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -132,11 +139,9 @@ a:focus {
             font-size: 1.5em;
         }
     }
-
-    .menu-item, .copyright{
+    .menu-item{
         display: none;
     }
-
     #profile-pic{
         width: 55px;
         height: 60px;
@@ -147,7 +152,6 @@ a:focus {
         margin-top: 20%;
         margin-bottom: 5%;
     }
-
     ul{
         li{
             a{
@@ -165,7 +169,7 @@ a:focus {
         }
     }
 
-    /* The progress container (grey background) */
+ /* The progress container (grey background) */
  .progress-container {
     width: 100%;
     height: 4px;
@@ -207,27 +211,11 @@ a:focus {
   }
 }
 
-// #sidebar ul li.active>a {
-//     color: $color-highlight;
-//     border-bottom: 5px solid $color-highlight;
-//     border-radius: 30%;
-//     box-sizing:border-box;
-// }
 #sidebar .active{
     color: $color-highlight;
     border-bottom: 5px solid $color-highlight;
     border-radius: 30%;
     box-sizing:border-box; 
-}
-.center{
-    text-align: center;
-}
-.copyright{
-    // margin-top: 20px;
-    font-size: 0.8em;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
 }
 
 /* SIDEBAR COLLAPSED */
@@ -241,7 +229,7 @@ a:focus {
         margin-top:10%;
         padding: 20px;
     }
-    .menu-item, .copyright{
+    .menu-item{
         display: inline-block;
     }
     #profile-pic{
@@ -263,6 +251,7 @@ a:focus {
         }
     }
 }
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -327,8 +316,10 @@ a:focus {
     }
 
     .scroll-icon{
-        position: relative;
+        position: absolute;
         bottom: 0;
+        left: 50%;
+        padding: 2%;
         .bounce{
             width: 25px;
             height: 25px;
@@ -532,6 +523,7 @@ a:focus {
 
     }
 }
+
 #education{
     padding: 5%;
 
@@ -615,9 +607,6 @@ a:focus {
 }
 
 #blog{
-    // background: linear-gradient( rgba(17,21,34, 0.75), rgba(17, 21, 34, 0.75) ), url('res/img/galaxy.jpg');
-    // background-size: cover;
-    // background-color: $color-highlight;
     #blog-wrapper{
         padding: 5%;
         h2{
@@ -661,6 +650,7 @@ a:focus {
         }
     }
 }
+
 #contact{
     padding: 5%;
     background-color: $color-bg-light;
@@ -716,6 +706,13 @@ a:focus {
     }
 }
 
+#footer{
+    width: 100%;
+    background-color: $color-bg-light;
+    margin-top: 30px;
+    padding: 10px;
+}
+
 /* ---------------------------------------------------
     CONNECT ICONS STYLE
 ----------------------------------------------------*/
@@ -747,9 +744,6 @@ a:focus {
 .hidden{
     display: none;
 } 
-// #sidebarCollapse{
-//     position: fixed;
-// }
 
 /* ---------------------------------------------------
     OVERLAYS
@@ -768,11 +762,6 @@ a:focus {
     font-family: 'Dosis', sans-serif;
 
     .overlay-wrapper{
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%,-50%);
-        // -ms-transform: translate(-50%,-50%);
         .highlight{
             color: #61bea1;
         }
@@ -867,7 +856,7 @@ a:focus {
                 }
             }
         }
-        .copyright, .menu-item{
+        .menu-item{
             display: none;
         }
     }
@@ -888,10 +877,6 @@ a:focus {
             height: 40px;
         }
     }
-    .copyright{
-        font-size: 0.6em;
-        margin: 2px;
-    }
     .connect-icon{
         height: 50px;
         width: 50px;
@@ -907,6 +892,9 @@ a:focus {
     #home{
         background-position-x: center;
         background-position-y: bottom;
+        .scroll-icon{
+            left: 45%;
+        }
     }
     #about, #education, #contact, #experience, #blog-wrapper, #skills-personal, #interest-wrapper{
         width: 96vw;
@@ -1045,8 +1033,7 @@ a:focus {
                 display: none;
             }
           }
-      }
-      
+      }     
 }
 
 @media (min-width: 992px) {
@@ -1065,12 +1052,6 @@ a:focus {
         display: none;
     }
     #experience{
-        // .experience-first-left{
-        //     box-shadow: 3px 0px 0px 0px $color-highlight;
-        // }
-        // .experience-second-left{
-        //     box-shadow: 3px 0px 0px 0px $color-highlight-sec;
-        // }
         .experience-left-wrapper{
             box-shadow: 3px 0px 0px 0px $color-highlight;
         }
@@ -1097,8 +1078,7 @@ a:focus {
                 border-right-color:  $color-highlight;
                 border-bottom-color:  $color-highlight;
                 border-left-color:  $color-highlight;  
-            }
-            
+            }       
         }
         /*---- Hover style for 2nd row ----- */
         .experience-second:hover{

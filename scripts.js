@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  //---------PRELOADER----------------//
 'use strict';
 $(window).on('load', function () {
     if ($(".pre-loader").length > 0)
@@ -7,10 +8,13 @@ $(window).on('load', function () {
         $(".pre-loader").remove();
     }
 });
+
+//----------DYNAMIC HEIGHT-----------//
   $('#sidebar').height($(window).innerHeight());
   $('#home').height($(window).innerHeight());
-  
-    $('#sidebarCollapse').on('click', function () {
+ 
+//----------SIDEBAR COLLAPSE-------//
+  $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
         off(this.id);
        
@@ -21,13 +25,13 @@ $(window).on('load', function () {
           on('sidebarExpand');
         }
     });
-
   $('#sidebarExpand').on('click', function () {
       $('#sidebar').toggleClass('active');
       off(this.id);   
       on('sidebarCollapse');
   });
 
+//---------NAVBAR COLLAPSE---------//
   $('#navbar-expand-btn').on('click', function () {
     off(this.id);
     on('collapsibleNavbar');
@@ -39,7 +43,7 @@ $(window).on('load', function () {
   });
 });
 
-//typing text
+//---------TYPING ANIMATION---------//
 var text = ["Singer", "Coder", "Blogger","Developer"];
 var counter = 0;
 var elem1 = document.getElementById("changeText");
@@ -69,9 +73,8 @@ function typeWriter() {
   }
 }
 
-// When the user scrolls the page, increment the progress bar
+//---------PROGRESS BAR ANIMATION---------//
 window.onscroll = function() {scrollProgress()};
-
 function scrollProgress() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -79,7 +82,7 @@ function scrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-//------------ Contact Form -----------------------------//
+//------------ CONTACT FORM -----------------------------//
 
 function isEmpty(value) {
   if (value == null || value == 'undefined' || value == "") return true;
@@ -163,14 +166,12 @@ function validateMsg() {
   return valid;
  }
 
- //-----------------------//
-
- //popover
+//---------TOOLTIP POPOVER---------//
  $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-//overlay
+//---------OVERLAY ANIMATION---------//
 function on(id) {
   document.getElementById(id).style.display = "block";
 }
@@ -190,7 +191,8 @@ function offOverlay(id)
   off(id);
   $("body").removeClass("noscroll");
 }
-//profile pic
+
+//---------PROFILE PICTURE ANIMATION---------//
 function onHover(id,img)
 {
     $(id).attr('src', img);

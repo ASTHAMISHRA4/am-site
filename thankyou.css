@@ -33,7 +33,6 @@ button:hover{
 }
 .content-wrapper{
     position: relative;
-    /* top: 50%; */
     transform: translateY(50%);
 }
 .failure-heading{

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Astha Mishra</title>
-   
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Custom -->
+    <!-- Custom CSS-->
     <link rel="stylesheet" href="main.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-
+    <!-- Favicon -->
     <link rel="icon" href="res/cur/cursor_g.cur">
-
 </head>
 
 <body data-spy="scroll" data-target="#sidebar" data-offset="50">
-
     <div class="wrapper">
+
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -81,10 +76,11 @@
                     </a>
                 </li>
             </ul>
+            <!-- Progress Bar -->
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
             </div>
-            <!-- <p class = "copyright center">&copy; Designed and Owned by Astha Mishra</p> -->
+            <!-- Sidebar Collapse and Expand -->
             <div class="row sidebarCollapse-wrapper">
                 <button type="button" id="sidebarCollapse" class="btn btn-lg" onclick="onSidebarCollapse();">
                     <i class="fas fa-angle-double-left icon"></i>
@@ -93,64 +89,62 @@
                     <i class="fas fa-angle-double-right icon"></i>
                 </button>              
             </div>
-
         </nav>
 
         <!-- Page Content  -->
         <div class="container-fluid" id="content">
-
+            <!-- Top Navbar for small screens -->
             <nav class="navbar" id="collapsibleNavbar">
-                
-                    <ul class="list-unstyled components">
-                        <li class="mt-2">
-                            <a href="#home" class="nav-link">
-                                <i class="fas fa-home icon"></i>
-                                <span class="ml-2 menu-item">Home</span> 
-                            </a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#about" class="nav-link">
-                                <i class="fa fa-user icon"></i>
-                                <span class="ml-2 menu-item">&nbsp;About</span>
-                            </a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#education" class="nav-link">
-                                <i class="fa fa-graduation-cap icon"></i>
-                                <span class="ml-2 menu-item">Education</span>
-                            </a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#skills" class="nav-link">
-                                <i class="fas fa-code icon"></i>
-                                <span class="ml-2 menu-item">Skills</span>
-                            </a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#experience" class="nav-link">
-                                <i class="fa fa-laptop icon"></i>
-                                <span class="ml-2 menu-item">Experience</span> 
-                            </a>
-                        </li>
+                <ul class="list-unstyled components">
+                    <li class="mt-2">
+                        <a href="#home" class="nav-link">
+                            <i class="fas fa-home icon"></i>
+                            <span class="ml-2 menu-item">Home</span> 
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#about" class="nav-link">
+                             <i class="fa fa-user icon"></i>
+                            <span class="ml-2 menu-item">&nbsp;About</span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#education" class="nav-link">
+                            <i class="fa fa-graduation-cap icon"></i>
+                            <span class="ml-2 menu-item">Education</span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#skills" class="nav-link">
+                            <i class="fas fa-code icon"></i>
+                            <span class="ml-2 menu-item">Skills</span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#experience" class="nav-link">
+                            <i class="fa fa-laptop icon"></i>
+                            <span class="ml-2 menu-item">Experience</span> 
+                        </a>
+                    </li>
                         <!-- <li>
                             <a href="#">
                                 <i class="fas fa-image"></i>
                                 <span class="ml-4 menu-item">&nbsp;Portfolio</span>
                             </a>
                         </li> -->
-                        <li class="mt-2">
-                            <a href="#blog" class="nav-link">
-                                <i class="fa fa-podcast icon"></i>
-                                <span class="ml-2 menu-item">&nbsp;Blog</span>
-                            </a>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#contact" class="nav-link">
-                                <i class="fa fa-paper-plane icon"></i>
-                                <span class="ml-2 menu-item">Contact</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <li class="mt-2">
+                        <a href="#blog" class="nav-link">
+                            <i class="fa fa-podcast icon"></i>
+                            <span class="ml-2 menu-item">&nbsp;Blog</span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#contact" class="nav-link">
+                            <i class="fa fa-paper-plane icon"></i>
+                            <span class="ml-2 menu-item">Contact</span>
+                        </a>
+                    </li>
+                </ul>
             
                 <button type="button" id="navbarCollapse" class="btn btn-lg w-100 mt-2">
                     <i class="fas fa-angle-double-up icon"></i>
@@ -166,10 +160,9 @@
                         <h1 class="mt-4 name">ASTHA <span id = "surname">MISHRA</span></h1>
                         <h4 class="mt-3">I'm a <span id = "changeText">Software Developer</span></h4>
                 </div>
-                <!-- <div class="scroll-icon">
+                <div class="scroll-icon">
                     <a href="#about"><i class="fas fa-angle-double-down bounce"></i></a>
-                </div> -->
-                
+                </div>   
             </div>
 
             <!-- About -->
@@ -190,7 +183,7 @@
                             <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Chennai, India</p>
                             <p><i class="fas fa-envelope icon"></i>&nbsp;&nbsp;Mail : contact@asthamishra.me</p>
                             <p><i class="fas fa-chess-knight icon"></i>&nbsp;&nbsp;Interests : Coding, Chess, Reading</p>
-                            <p><i class="fas fa-sign-language icon"></i>&nbsp;&nbsp;Language : English, Hindi</p>
+                            <p><i class="fas fa-sign-language icon"></i>&nbsp;&nbsp;Languages : English, Hindi</p>
                             <div class="about-btn mt-4">
                                 <button type="button" class="btn"><a href="res/docs/Astha Mishra Resume.pdf">Download Resume</a></button>
                                 <button type="button" class="btn"><a href="https://asthamishra.me/blog">Visit Blog</a></button>
@@ -206,9 +199,9 @@
                 <div class="container-fluid education-wrapper">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-left-wrapper education-first">
-                                <div class="education-year education-year-left education-year-first">
-                                    <h3>2018</h3>
-                                </div>
+                            <div class="education-year education-year-left education-year-first">
+                                <h3>2018</h3>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-right-wrapper education-first">
                             <div class="education-text education-text-right education-text-first" onclick="onOverlay('overlay-ed1')">
@@ -220,35 +213,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        
+                    <div class="row">      
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-left-wrapper education-second">
                             <div class="education-text education-text-left education-text-second " onclick="onOverlay('overlay-ed2')">
                                 <h4>Bachelor of Technology</h4>
                                 <h5>Computer Science & Engineering</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Raipur , India<br>
                                     <i class="fas fa-calendar-alt icon"></i>&nbsp;&nbsp;Duration : 4 years<br>
-                                    <i class="fas fa-percentage icon"></i>&nbsp;&nbsp;Grade : 89.50%</p>
+                                    <i class="fas fa-percentage icon"></i>&nbsp;&nbsp;Grade : 89.50%
+                                </p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-right-wrapper education-second">
-                                <div class="education-year education-year-right education-year-second">
-                                    <h3>2017</h3>
-                                </div>
+                            <div class="education-year education-year-right education-year-second">
+                                <h3>2017</h3>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-left-wrapper education-third">
-                                <div class="education-year education-year-left education-year-third">
-                                    <h3>2012</h3>
-                                </div>
+                            <div class="education-year education-year-left education-year-third">
+                                <h3>2012</h3>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl education-right-wrapper education-third">
                             <div class="education-text education-text-right education-text-third">
                                 <h4>High School</h4>
                                 <h5>ISC board</h5>
                                 <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Raipur , India<br>
-                                    <i class="fas fa-percentage icon"></i>&nbsp;&nbsp;Grade : 87.75%</p>
+                                    <i class="fas fa-percentage icon"></i>&nbsp;&nbsp;Grade : 87.75%
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -367,11 +361,11 @@
                 <div class="container-fluid experience-wrapper">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-left-wrapper experience-first experience-first-left">
-                                <div class="experience-year experience-year-left experience-year-first">
-                                    <p class="pt-3 h3">2019</p>
-                                    <p>March - Present</p>
-                                    <h3 class="pb-1">2021</h3>
-                                </div>
+                            <div class="experience-year experience-year-left experience-year-first">
+                                <p class="pt-3 h3">2019</p>
+                                <p>March - Present</p>
+                                <h3 class="pb-1">2021</h3>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-right-wrapper experience-first">
                             <div class="experience-text experience-text-right experience-text-first" onclick="onOverlay('overlay-ex2')">
@@ -385,7 +379,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-left-wrapper experience-second experience-second-left">
                             <div class="experience-text experience-text-left experience-text-second" onclick="onOverlay('overlay-ex1')">
                                 <h4>Graduate Engineer Trainee</h4>
@@ -397,11 +390,11 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl experience-right-wrapper experience-second">
-                                <div class="experience-year experience-year-right experience-year-second">
-                                    <h3 class="pt-3">2018</h3>
-                                    <p>March - March</p>
-                                    <p class="pb-1 h3">2019</p>
-                                </div>
+                            <div class="experience-year experience-year-right experience-year-second">
+                                <h3 class="pt-3">2018</h3>
+                                <p>March - March</p>
+                                <p class="pb-1 h3">2019</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -498,6 +491,7 @@
                     </div>
                 </div>                
             </div>
+
             <div id="contact">
                 <h6>Contact</h6>
                 <h2>GET IN TOUCH</h2>
@@ -531,10 +525,13 @@
                                 </div>
                         </form>
                         <!--- Google Map -->
-                            <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.641828400421!2d80.25146231527975!3d13.058455716498605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266401cbfffff%3A0x81f0eac9f7814300!2sICU%20Medical%20India%20LLP!5e0!3m2!1sen!2sin!4v1613564761154!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg col-xl map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.641828400421!2d80.25146231527975!3d13.058455716498605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266401cbfffff%3A0x81f0eac9f7814300!2sICU%20Medical%20India%20LLP!5e0!3m2!1sen!2sin!4v1613564761154!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
-                
+            </div>
+
+            <div id="footer">
+                <p class = "copyright center">&copy; Designed and Owned by Astha Mishra</p>
             </div>
         </div>
 
@@ -640,7 +637,6 @@
                     <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ed1')"></i>
                 </div>
             </div>
-
         </div>
 
         <div id="overlay-ed2" class="overlay">
@@ -705,8 +701,7 @@
                             </p>
                           
                         </p>
-                        <h5 class="highlight mt-2">Online Student Portal</h5>
-                    
+                        <h5 class="highlight mt-2">Online Student Portal</h5>                  
                         <p class="text-justify">
                             Web Application used by students and professors to communicate and share resources, assignments, and E-books. It also doubles as a notice board.<br>
                             <p class="tech-wrapper">
@@ -781,8 +776,7 @@
                                 <span class="tech">SQLite</span>
                                 <span class="tech">Selenium</span>
                                 <span class="tech">Jenkins</span>
-                            </p>
-                          
+                            </p> 
                         </p>  
                     </div>
                 </div>
@@ -879,16 +873,15 @@
                           
                         </p>  
                     </div>
-                </div>
-             
+                </div>           
             </div>
             <div class="close-overlay">
                 <i class="fas fa-window-close icon fa-lg" onclick="offOverlay('overlay-ex2')"></i>
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -902,11 +895,12 @@
 </body>
 <!--Preloader-->
 <div class="pre-loader">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <div class="preload-wrapper">
-    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_tr1pjkop.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    <div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="preload-wrapper">
+      <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_tr1pjkop.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+      <div>
         <p>Getting Ready . . .</p>
+      </div>
     </div>
-  </div>
+</div>
 </html>
