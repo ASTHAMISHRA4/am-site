@@ -10,6 +10,42 @@ $color-bg-dark : #111522;
 $color-text-dark : grey;
 $color-text-light : lightgrey;
 $color-bg-light : #141a2c;
+//---------CURSOR STYLE--------------//
+#cursor{
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $color-highlight;
+    margin: -15px;
+    transition-duration: 150ms;
+    z-index: 10000;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pointer{
+    border-radius: 1000px;
+    width: 10px;
+    height: 10px;
+    border: 5px solid $color-highlight;
+    margin: -5px;
+    z-index: 10001;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes cursorClick{
+    from,to{
+        border: 3px solid $color-highlight;
+        transform: scale(1);
+    }
+    60%{
+        border: 3px solid rgba(244, 67, 54, 0);
+        transform: scale(2);
+    }
+    70%{
+        border: 3px solid rgba(244, 67, 54, 0);
+        transform: scale(1.4);
+    }
+}
 /* ---------------------------------------------------
     PRELOADER STYLE
 ----------------------------------------------------- */
@@ -42,7 +78,7 @@ $color-bg-light : #141a2c;
 }
 /* ----------------------------------------------------- */
 body {
-    cursor: url("res/cur/cursor_g.cur"), auto;
+    cursor: none;
     color: $color-text-dark;
     background-color: $color-bg-dark;
     font-family: 'Varela', sans-serif;
@@ -158,13 +194,13 @@ a:focus {
                 padding: 20px 10px;
                 font-size: 1.5em;
                 text-align: center;
-                :hover{
-                    color:#395e3f;
-                }
                 i{
                     display: block;
                     margin-bottom: 5px;
                 }
+            }
+            :hover{
+                color:$color-highlight;
             }
         }
     }
@@ -359,7 +395,7 @@ a:focus {
             color: $color-text-light;
         }
         :hover{
-            border-color: $color-highlight;
+            // border-color: $color-highlight;
             background-color: $color-bg-light;
             color: $color-text-dark;
         }
@@ -694,7 +730,7 @@ a:focus {
             color: $color-text-light;
         }
         button:hover{
-                border-color: $color-highlight;
+                // border-color: $color-highlight;
                 background-color: $color-bg-light;
                 color: $color-text-dark;
         }
@@ -722,7 +758,7 @@ a:focus {
     position: fixed;
     max-width: 50px;
     margin-bottom: 2em;
-    margin-right: 1em;
+    margin-right: 2em;
 
     button{
         margin: 10px;
@@ -730,12 +766,7 @@ a:focus {
         font-size: 1.5em;
         background-color: transparent;
         border: none;
-        padding: 0;
-        // margin: 5px;
-    }
-    button:hover{
-        background-color: $color-highlight;
-        color: $color-bg-dark;
+        padding: 10px;
     }
 } 
 #menu-icon-wrapper:hover .hidden{
@@ -813,7 +844,20 @@ a:focus {
         }
     }
   }
-  
+  @keyframes zoomIn{
+    from,to{
+        border: 3px solid $color-highlight;
+        transform: scale(1);
+    }
+    60%{
+        border: 3px solid rgba(244, 67, 54, 0);
+        transform: scale(2);
+    }
+    70%{
+        border: 3px solid rgba(244, 67, 54, 0);
+        transform: scale(1.4);
+    }
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

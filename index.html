@@ -14,7 +14,8 @@
     <!-- Favicon -->
     <link rel="icon" href="res/cur/cursor_g.cur">
 </head>
-
+<div id="cursor"></div>
+<div id="pointer"></div>
 <body data-spy="scroll" data-target="#sidebar" data-offset="50">
     <div class="wrapper">
 
@@ -28,31 +29,31 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#home" class="nav-link">
+                    <a href="#home" class="nav-link targetable circle">
                         <i class="fas fa-home"></i>
                         <span class="ml-4 menu-item">Home</span> 
                     </a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-link">
+                    <a href="#about" class="nav-link targetable circle">
                         <i class="fa fa-user"></i>
                         <span class="ml-4 menu-item">&nbsp;About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#education" class="nav-link">
+                    <a href="#education" class="nav-link targetable circle">
                         <i class="fa fa-graduation-cap"></i>
                         <span class="ml-4 menu-item">Education</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#skills" class="nav-link">
+                    <a href="#skills" class="nav-link targetable circle">
                         <i class="fas fa-code"></i>
                         <span class="ml-4 menu-item">Skills</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#experience" class="nav-link">
+                    <a href="#experience" class="nav-link targetable circle">
                         <i class="fa fa-laptop"></i>
                         <span class="ml-4 menu-item">Experience</span> 
                     </a>
@@ -64,13 +65,13 @@
                     </a>
                 </li> -->
                 <li>
-                    <a href="#blog" class="nav-link">
+                    <a href="#blog" class="nav-link targetable circle">
                         <i class="fa fa-podcast"></i>
                         <span class="ml-4 menu-item">&nbsp;Blog</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-link">
+                    <a href="#contact" class="nav-link targetable circle">
                         <i class="fa fa-paper-plane"></i>
                         <span class="ml-4 menu-item">Contact</span>
                     </a>
@@ -82,10 +83,10 @@
             </div>
             <!-- Sidebar Collapse and Expand -->
             <div class="row sidebarCollapse-wrapper">
-                <button type="button" id="sidebarCollapse" class="btn btn-lg" onclick="onSidebarCollapse();">
+                <button type="button" id="sidebarCollapse" class="btn btn-lg targetable clickable" onclick="onSidebarCollapse();">
                     <i class="fas fa-angle-double-left icon"></i>
                 </button> 
-                <button type="button" id="sidebarExpand" class="btn btn-lg">
+                <button type="button" id="sidebarExpand" class="btn btn-lg targetable clickable">
                     <i class="fas fa-angle-double-right icon"></i>
                 </button>              
             </div>
@@ -161,7 +162,7 @@
                         <h4 class="mt-3">I'm a <span id = "changeText">Software Developer</span></h4>
                 </div>
                 <div class="scroll-icon">
-                    <a href="#about"><i class="fas fa-angle-double-down bounce"></i></a>
+                    <a href="#about" class="targetable clickable"><i class="fas fa-angle-double-down bounce"></i></a>
                 </div>   
             </div>
 
@@ -179,14 +180,14 @@
                             <p class="mt-5">I am a Software Engineer with 3+ years of experience in development using Java, Android and javascript. I am passionate about coding, reading and singing.
                                 I also like travelling and writing blogs.
                             </p>
-                            <p class="mt-5"><i class="fas fa-birthday-cake icon"></i>&nbsp;&nbsp;Birthdate : 4th November</p>
+                            <p class="mt-5"><i class="fas fa-birthday-cake icon targetable"></i>&nbsp;&nbsp;Birthdate : 4th November</p>
                             <p><i class="fas fa-map-marker-alt icon"></i>&nbsp;&nbsp;Location : Chennai, India</p>
                             <p><i class="fas fa-envelope icon"></i>&nbsp;&nbsp;Mail : contact@asthamishra.me</p>
                             <p><i class="fas fa-chess-knight icon"></i>&nbsp;&nbsp;Interests : Coding, Chess, Reading</p>
                             <p><i class="fas fa-sign-language icon"></i>&nbsp;&nbsp;Languages : English, Hindi</p>
                             <div class="about-btn mt-4">
-                                <button type="button" class="btn"><a href="res/docs/Astha Mishra Resume.pdf">Download Resume</a></button>
-                                <button type="button" class="btn"><a href="https://asthamishra.me/blog">Visit Blog</a></button>
+                                <button type="button" class="btn targetable"><a href="res/docs/Astha Mishra Resume.pdf">Download Resume</a></button>
+                                <button type="button" class="btn targetable"><a href="https://asthamishra.me/blog">Visit Blog</a></button>
                             </div>
                         </div>
                     </div>
@@ -464,9 +465,9 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="blog-text">
-                                            <h5><a href="https://asthamishra.me/blog/index.php/2020/11/11/covid-19-good-bad-and-ugly/">COVID 19 – Good, Bad, and Ugly</a></h5>
+                                            <h5><a href="https://asthamishra.me/blog/index.php/2020/11/11/covid-19-good-bad-and-ugly/" class="targetable clickable">COVID 19 – Good, Bad, and Ugly</a></h5>
                                             <p><i class="fa fa-user icon"></i> By Astha Mishra &nbsp;&nbsp; <i class="fas fa-th-large icon"></i> 
-                                                <a href="https://asthamishra.me/blog/index.php/category/lifestyle/">Lifestyle</a>
+                                                <a href="https://asthamishra.me/blog/index.php/category/lifestyle/" class="targetable clickable">Lifestyle</a>
                                             </p>
                                         </div>
                                     </div>
@@ -479,9 +480,9 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="blog-text">
-                                            <h5><a href="https://asthamishra.me/blog/index.php/2021/02/03/essential-tips-to-score-your-best-in-toefl/">Essential Tips to Score your best in TOEFL</a></h5>
+                                            <h5><a href="https://asthamishra.me/blog/index.php/2021/02/03/essential-tips-to-score-your-best-in-toefl/" class="targetable clickable">Essential Tips to Score your best in TOEFL</a></h5>
                                             <p><i class="fa fa-user icon"></i> By Astha Mishra &nbsp;&nbsp; <i class="fas fa-th-large icon"></i> 
-                                                <a href="https://asthamishra.me/blog/index.php/category/education/">Education</a>
+                                                <a href="https://asthamishra.me/blog/index.php/category/education/" class="targetable clickable">Education</a>
                                             </p>
                                         </div>
                                     </div>
@@ -519,7 +520,7 @@
                                 </div>
                                 
                                 <div class="contact-button" data-color="dark">
-                                <button class="btn" onclick="return sendContact();" name="submit" value="submit">
+                                <button class="btn targetable" onclick="return sendContact();" name="submit" value="submit">
                                     <a id="send_message">Send Message</a>
                                 </button>
                                 </div>
@@ -538,26 +539,26 @@
         <!-- Connect Open button-->
         <div id="menu-icon-wrapper" class="container">
             <div class="btn-group-vertical">
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="linkedin">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="linkedin">
                     <a href="https://www.linkedin.com/in/astham/"><i class="fab fa-linkedin-in"></i></a>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="github">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="github">
                     <i class="fab fa-github"></i>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="quora">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="quora">
                     <a href="https://www.quora.com/profile/Astha-Mishra-1"><i class="fab fa-quora"></i></a>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="blog">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="blog">
                     <i class="fab fa-blogger"></i>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="email">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="email">
                     <a href="mailto:contact@asthamishra.me"><i class="fab fa-google"></i></a>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle hidden" id="medium">
+                <button type="button" class="btn btn-dark rounded-circle hidden targetable round" id="medium">
                     <a href="https://astha-mishra.medium.com/"><i class="fab fa-medium"></i></a>
                 </button>
-                <button type="button" class="btn btn-dark rounded-circle" id="connect-icon">
-                    <i class="fas fa-code-branch"></i>
+                <button type="button" class="btn btn-dark rounded-circle targetable round" id="connect-icon">
+                    <i class="fas fa-comment"></i>
                 </button>
             </div>
            
@@ -891,7 +892,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <!-- Custom Js -->
     <script src="scripts.js"></script>
-
+    <!--External Library-->
+    <script src="cursor.js"></script>
 </body>
 <!--Preloader-->
 <div class="pre-loader">

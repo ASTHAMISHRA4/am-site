@@ -24,11 +24,15 @@ $(window).on('load', function () {
         else{
           on('sidebarExpand');
         }
+        $(".nav-link").addClass("round");
+        $(".nav-link").removeClass("clickable");
     });
   $('#sidebarExpand').on('click', function () {
       $('#sidebar').toggleClass('active');
       off(this.id);   
       on('sidebarCollapse');
+      $(".nav-link").addClass("clickable");
+      $(".nav-link").removeClass("round");
   });
 
 //---------NAVBAR COLLAPSE---------//
@@ -41,6 +45,21 @@ $(window).on('load', function () {
     off(this.id);
     on('navbar-expand-btn');
   });
+
+  //---------NAVBAR COLLAPSE---------//
+//   $('#connect-icon').on('click', function () {
+//     $('#connect-icon').toggleClass('closed');
+    
+// });
+
+  //-------CURSOR---------------------//
+  magnetCurs.init({
+    click:3000,
+    spacing:20,
+    pointer:true,
+    shockable:4
+});
+
 });
 
 //---------TYPING ANIMATION---------//
