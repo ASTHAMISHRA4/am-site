@@ -236,11 +236,6 @@ a:focus {
   display: block;
   margin-bottom: 5px;
 }
-#sidebar ul li a :hover i {
-  -ms-transform: rotate(20deg);
-  /* IE 9 */
-  transform: rotate(20deg);
-}
 #sidebar ul li :hover {
   color: #288c6c;
 }

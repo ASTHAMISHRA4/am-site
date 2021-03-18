@@ -198,10 +198,6 @@ a:focus {
                     display: block;
                     margin-bottom: 5px;
                 }
-                :hover i{
-                    -ms-transform: rotate(20deg); /* IE 9 */
-                    transform: rotate(20deg);
-                }
             }
             :hover{
                 color:$color-highlight;
