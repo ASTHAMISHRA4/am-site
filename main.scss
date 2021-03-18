@@ -198,6 +198,10 @@ a:focus {
                     display: block;
                     margin-bottom: 5px;
                 }
+                :hover i{
+                    -ms-transform: rotate(20deg); /* IE 9 */
+                    transform: rotate(20deg);
+                }
             }
             :hover{
                 color:$color-highlight;
@@ -369,7 +373,10 @@ a:focus {
     padding: 5%;
     background-color: $color-bg-light;
     text-align: justify;
-
+    p :hover{
+        text-decoration: underline;
+        text-decoration-color : $color-highlight;
+    }
     img{
         height: 550px;
         width: 430px;
@@ -404,7 +411,10 @@ a:focus {
 
 #experience{
     padding: 5%;
-
+    p :hover{
+        text-decoration: underline;
+        text-decoration-color : $color-text-dark;
+    }
     h5{
         color: $color-text-light;
     }
@@ -466,7 +476,12 @@ a:focus {
         .experience-right-wrapper{
             margin-left: 40px;
         }
-
+        .hover-item {
+            transition: 0.3s;
+        }
+        .hover-item:hover {
+            transform: translate(0, -10px);
+        }
     }
 }
 
@@ -491,17 +506,46 @@ a:focus {
             font-size: 1em;
         }
           
-        .java-se{padding-right:10px;width: 80%; background-color: $color-highlight; color: $color-text-light}
-        .java-ee{padding-right:10px;width: 60%; background-color: $color-highlight; color: $color-text-light}
-        .android{padding-right:10px;width: 50%; background-color: $color-highlight; color: $color-text-light}
-        .cpp{padding-right:10px;width: 60%; background-color: $color-highlight; color: $color-text-light}
-        .python{padding-right:10px;width: 50%; background-color: $color-highlight; color: $color-text-light}
+        .java-se{padding-right:10px;width: 0%; background-color: $color-highlight; color: $color-text-light}
+        .java-ee{padding-right:10px;width: 0%; background-color: $color-highlight; color: $color-text-light}
+        .android{padding-right:10px;width: 0%; background-color: $color-highlight; color: $color-text-light}
+        .cpp{padding-right:10px;width: 0%; background-color: $color-highlight; color: $color-text-light}
+        .python{padding-right:10px;width: 0%; background-color: $color-highlight; color: $color-text-light}
+
+        .java-se.in-view{
+            transition:width 1s ease-in-out;
+            width: 80%;
+        }
+        .java-se.in-view{
+            transition:width 1s ease-in-out;
+            width: 80%;
+        }
+        .java-ee.in-view{
+            transition:width 1s ease-in-out;
+            width: 60%;
+        }
+        .android.in-view{
+            transition:width 1s ease-in-out;
+            width: 50%;
+        }
+        .cpp.in-view{
+            transition:width 1s ease-in-out;
+            width: 60%;
+        }
+        .python.in-view{
+            transition:width 1s ease-in-out;
+            width: 50%;
+        }
     
     }
 
     .skills-right-wrapper{
         text-align: right;
 
+        .skill-txt-right{
+            text-align: right;
+            display:block;
+        }
         .skill-right{
             margin-top: 15px;
             .bar-right {
@@ -512,11 +556,32 @@ a:focus {
                 font-size: 1em;
             }
               
-            .html{padding-left:10px;width: 90%; background-color: $color-highlight; color: $color-text-light; margin-left: 10%;}
-            .css{padding-left:10px;width: 85%; background-color: $color-highlight; color: $color-text-light; margin-left: 15%;}
-            .js{padding-left:10px;width: 60%; background-color: $color-highlight; color: $color-text-light; margin-left: 40%;}
-            .php{padding-left:10px;width: 70%; background-color: $color-highlight; color: $color-text-light; margin-left: 30%;}
-            .angular{padding-left:10px;width: 65%; background-color: $color-highlight; color: $color-text-light;margin-left: 35%;}          
+            .html{padding-left:10px;width: 0%; background-color: $color-highlight; color: $color-text-light; float: right;}
+            .css{padding-left:10px;width: 0%; background-color: $color-highlight; color: $color-text-light; float: right;}
+            .js{padding-left:10px;width: 0%; background-color: $color-highlight; color: $color-text-light; float: right;}
+            .php{padding-left:10px;width: 0%; background-color: $color-highlight; color: $color-text-light; float: right;}
+            .angular{padding-left:10px;width: 0%; background-color: $color-highlight; color: $color-text-light; float: right;}  
+            
+            .html.in-view{
+                transition:width 1s ease-in-out;
+                width: 90%;
+            }
+            .css.in-view{
+                transition:width 1s ease-in-out;
+                width: 85%;
+            }
+            .js.in-view{
+                transition:width 1s ease-in-out;
+                width: 60%;
+            }
+            .php.in-view{
+                transition:width 1s ease-in-out;
+                width: 70%;
+            }
+            .angular.in-view{
+                transition:width 1s ease-in-out;
+                width: 65%;
+            }
         }
     }
 
@@ -562,7 +627,10 @@ a:focus {
 
 #education{
     padding: 5%;
-
+    p :hover{
+        text-decoration: underline;
+        text-decoration-color : $color-text-dark;
+    }
     h5{
         color: $color-text-light;
     }
@@ -607,6 +675,12 @@ a:focus {
             margin-left: 40px;
         }
 
+        .hover-item {
+            transition: 0.3s;
+        }
+        .hover-item:hover {
+            transform: translate(0, -10px);
+        }
     }
 }
 
@@ -650,6 +724,15 @@ a:focus {
         }
         h6{
             color: $color-highlight;
+        }
+        h5 a:hover{
+            text-decoration-color: $color-text-light;
+            text-decoration: underline;
+        }
+        p a:hover{
+            color: $color-highlight;
+            text-decoration-color: $color-highlight;
+            text-decoration: underline;
         }
         .blog-content{
             
@@ -791,7 +874,7 @@ a:focus {
     z-index: 2;
     color: rgb(192, 179, 179);
     font-family: 'Dosis', sans-serif;
-
+    transition: .3s ease;
     .overlay-wrapper{
         .highlight{
             color: #61bea1;
@@ -844,20 +927,6 @@ a:focus {
         }
     }
   }
-  @keyframes zoomIn{
-    from,to{
-        border: 3px solid $color-highlight;
-        transform: scale(1);
-    }
-    60%{
-        border: 3px solid rgba(244, 67, 54, 0);
-        transform: scale(2);
-    }
-    70%{
-        border: 3px solid rgba(244, 67, 54, 0);
-        transform: scale(1.4);
-    }
-}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

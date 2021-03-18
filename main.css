@@ -236,6 +236,11 @@ a:focus {
   display: block;
   margin-bottom: 5px;
 }
+#sidebar ul li a :hover i {
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  transform: rotate(20deg);
+}
 #sidebar ul li :hover {
   color: #288c6c;
 }
@@ -389,6 +394,10 @@ a:focus {
   background-color: #141a2c;
   text-align: justify;
 }
+#about p :hover {
+  text-decoration: underline;
+  text-decoration-color: #288c6c;
+}
 #about img {
   height: 550px;
   width: 430px;
@@ -419,6 +428,10 @@ a:focus {
 
 #experience {
   padding: 5%;
+}
+#experience p :hover {
+  text-decoration: underline;
+  text-decoration-color: grey;
 }
 #experience h5 {
   color: lightgrey;
@@ -474,6 +487,12 @@ a:focus {
 #experience .experience-wrapper .experience-right-wrapper {
   margin-left: 40px;
 }
+#experience .experience-wrapper .hover-item {
+  transition: 0.3s;
+}
+#experience .experience-wrapper .hover-item:hover {
+  transform: translate(0, -10px);
+}
 
 #skills {
   padding: 5%;
@@ -497,36 +516,64 @@ a:focus {
 }
 #skills .skill-left .java-se {
   padding-right: 10px;
-  width: 80%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
 }
 #skills .skill-left .java-ee {
   padding-right: 10px;
-  width: 60%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
 }
 #skills .skill-left .android {
   padding-right: 10px;
-  width: 50%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
 }
 #skills .skill-left .cpp {
   padding-right: 10px;
-  width: 60%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
 }
 #skills .skill-left .python {
   padding-right: 10px;
-  width: 50%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
 }
+#skills .skill-left .java-se.in-view {
+  transition: width 1s ease-in-out;
+  width: 80%;
+}
+#skills .skill-left .java-se.in-view {
+  transition: width 1s ease-in-out;
+  width: 80%;
+}
+#skills .skill-left .java-ee.in-view {
+  transition: width 1s ease-in-out;
+  width: 60%;
+}
+#skills .skill-left .android.in-view {
+  transition: width 1s ease-in-out;
+  width: 50%;
+}
+#skills .skill-left .cpp.in-view {
+  transition: width 1s ease-in-out;
+  width: 60%;
+}
+#skills .skill-left .python.in-view {
+  transition: width 1s ease-in-out;
+  width: 50%;
+}
 #skills .skills-right-wrapper {
   text-align: right;
+}
+#skills .skills-right-wrapper .skill-txt-right {
+  text-align: right;
+  display: block;
 }
 #skills .skills-right-wrapper .skill-right {
   margin-top: 15px;
@@ -540,38 +587,58 @@ a:focus {
 }
 #skills .skills-right-wrapper .skill-right .html {
   padding-left: 10px;
-  width: 90%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
-  margin-left: 10%;
+  float: right;
 }
 #skills .skills-right-wrapper .skill-right .css {
   padding-left: 10px;
-  width: 85%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
-  margin-left: 15%;
+  float: right;
 }
 #skills .skills-right-wrapper .skill-right .js {
   padding-left: 10px;
-  width: 60%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
-  margin-left: 40%;
+  float: right;
 }
 #skills .skills-right-wrapper .skill-right .php {
   padding-left: 10px;
-  width: 70%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
-  margin-left: 30%;
+  float: right;
 }
 #skills .skills-right-wrapper .skill-right .angular {
   padding-left: 10px;
-  width: 65%;
+  width: 0%;
   background-color: #288c6c;
   color: lightgrey;
-  margin-left: 35%;
+  float: right;
+}
+#skills .skills-right-wrapper .skill-right .html.in-view {
+  transition: width 1s ease-in-out;
+  width: 90%;
+}
+#skills .skills-right-wrapper .skill-right .css.in-view {
+  transition: width 1s ease-in-out;
+  width: 85%;
+}
+#skills .skills-right-wrapper .skill-right .js.in-view {
+  transition: width 1s ease-in-out;
+  width: 60%;
+}
+#skills .skills-right-wrapper .skill-right .php.in-view {
+  transition: width 1s ease-in-out;
+  width: 70%;
+}
+#skills .skills-right-wrapper .skill-right .angular.in-view {
+  transition: width 1s ease-in-out;
+  width: 65%;
 }
 
 #skills-personal {
@@ -610,6 +677,10 @@ a:focus {
 
 #education {
   padding: 5%;
+}
+#education p :hover {
+  text-decoration: underline;
+  text-decoration-color: grey;
 }
 #education h5 {
   color: lightgrey;
@@ -650,6 +721,12 @@ a:focus {
 #education .education-wrapper .education-right-wrapper {
   margin-left: 40px;
 }
+#education .education-wrapper .hover-item {
+  transition: 0.3s;
+}
+#education .education-wrapper .hover-item:hover {
+  transform: translate(0, -10px);
+}
 
 #interest {
   background-color: #288c6c;
@@ -688,6 +765,15 @@ a:focus {
 }
 #blog #blog-wrapper h6 {
   color: #288c6c;
+}
+#blog #blog-wrapper h5 a:hover {
+  text-decoration-color: lightgrey;
+  text-decoration: underline;
+}
+#blog #blog-wrapper p a:hover {
+  color: #288c6c;
+  text-decoration-color: #288c6c;
+  text-decoration: underline;
 }
 #blog #blog-wrapper .blog-content {
   margin-top: 80px;
@@ -821,6 +907,7 @@ a:focus {
   z-index: 2;
   color: #c0b3b3;
   font-family: "Dosis", sans-serif;
+  transition: 0.3s ease;
 }
 .overlay .overlay-wrapper .highlight {
   color: #61bea1;
@@ -865,20 +952,6 @@ a:focus {
   cursor: url("res/cur/zoom-out.cur"), auto;
 }
 
-@keyframes zoomIn {
-  from, to {
-    border: 3px solid #288c6c;
-    transform: scale(1);
-  }
-  60% {
-    border: 3px solid rgba(244, 67, 54, 0);
-    transform: scale(2);
-  }
-  70% {
-    border: 3px solid rgba(244, 67, 54, 0);
-    transform: scale(1.4);
-  }
-}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
