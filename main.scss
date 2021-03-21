@@ -12,6 +12,7 @@ $color-text-light : lightgrey;
 $color-bg-light : #141a2c;
 //---------CURSOR STYLE--------------//
 #cursor{
+    visibility: hidden;
     border-radius: 1000px;
     width: 30px;
     height: 30px;
@@ -23,6 +24,7 @@ $color-bg-light : #141a2c;
     box-sizing: border-box;
 }
 #pointer{
+    visibility: hidden;
     border-radius: 1000px;
     width: 10px;
     height: 10px;
@@ -78,7 +80,6 @@ $color-bg-light : #141a2c;
 }
 /* ----------------------------------------------------- */
 body {
-    cursor: none;
     color: $color-text-dark;
     background-color: $color-bg-dark;
     font-family: 'Varela', sans-serif;
@@ -1146,6 +1147,9 @@ a:focus {
 }
 
 @media (min-width: 992px) {
+    body{
+        cursor: none;
+    }
     .overlay-wrapper{
         position: absolute;
         top: 50%;

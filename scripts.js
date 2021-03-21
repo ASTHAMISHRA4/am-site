@@ -7,6 +7,10 @@ $(window).on('load', function () {
     {
         $(".pre-loader").remove();
     }
+    if($(window).width() >= 992){
+      $('#cursor').css("visibility", "visible");
+      $('#pointer').css("visibility", "visible");
+    }
 });
 
 //----------DYNAMIC HEIGHT-----------//
@@ -53,12 +57,14 @@ $(window).on('load', function () {
 // });
 
   //-------CURSOR---------------------//
-  magnetCurs.init({
-    click:3000,
-    spacing:20,
-    pointer:true,
-    shockable:4
-});
+  if($(window).width() >= 992){
+    magnetCurs.init({
+      click:3000,
+      spacing:20,
+      pointer:true,
+      shockable:4
+  });
+  }
 
 //-----------------SMOOTH SCROLL----------//
 $(".home-btn").click(function() {
@@ -95,6 +101,15 @@ $(".contact-btn").click(function() {
   $('html,body').animate({
       scrollTop: $("#contact").offset().top},
       'slow');
+});
+
+//-------------------- CHANGE CURSOR COLOR ON HOVER IN LIGHT BACKGROUND------------------//
+$("#interest,#skills-personal").hover(function(){
+  $('#cursor').css("border-color", "#141a2c");
+  $('#pointer').css("border-color", "#141a2c");
+  }, function(){
+  $('#cursor').css("border-color", "#288c6c");
+  $('#pointer').css("border-color", "#288c6c");
 });
 
 });

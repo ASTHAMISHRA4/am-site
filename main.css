@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 #cursor {
+  visibility: hidden;
   border-radius: 1000px;
   width: 30px;
   height: 30px;
@@ -14,6 +15,7 @@
 }
 
 #pointer {
+  visibility: hidden;
   border-radius: 1000px;
   width: 10px;
   height: 10px;
@@ -71,7 +73,6 @@
 
 /* ----------------------------------------------------- */
 body {
-  cursor: none;
   color: grey;
   background-color: #111522;
   font-family: "Varela", sans-serif;
@@ -1146,6 +1147,10 @@ a:focus {
   }
 }
 @media (min-width: 992px) {
+  body {
+    cursor: none;
+  }
+
   .overlay-wrapper {
     position: absolute;
     top: 50%;

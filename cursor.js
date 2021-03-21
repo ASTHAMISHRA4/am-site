@@ -137,10 +137,3 @@ magnetCurs.init = function (params) {
 magnetCurs.error = function (string) {
     console.error('Magnetic Cursor : '+string);
 }
-
-magnetCurs.init({
-    click:300,
-    spacing:20,
-    pointer:true,
-    shockable:4
-});
