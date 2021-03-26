@@ -370,6 +370,7 @@ a:focus {
     padding: 5%;
     background-color: $color-bg-light;
     text-align: justify;
+    overflow-x: hidden;
     p :hover{
         text-decoration: underline;
         text-decoration-color : $color-highlight;
@@ -408,6 +409,7 @@ a:focus {
 
 #experience{
     padding: 5%;
+    overflow-x: hidden;
     p :hover{
         text-decoration: underline;
         text-decoration-color : $color-text-dark;
@@ -484,6 +486,7 @@ a:focus {
 
 #skills{
     padding: 5%;
+    overflow-x: hidden;
     background-color: $color-bg-light;
     h5{
         color: $color-text-light;
@@ -623,6 +626,7 @@ a:focus {
 }
 
 #education{
+    overflow-x: hidden;
     padding: 5%;
     p :hover{
         text-decoration: underline;
@@ -714,6 +718,7 @@ a:focus {
 }
 
 #blog{
+    overflow-x: hidden;
     #blog-wrapper{
         padding: 5%;
         h2{
@@ -772,7 +777,7 @@ a:focus {
     background-color: $color-bg-light;
     text-align: justify;
     color: $color-text-light;
-
+    overflow-x: hidden;
     h2{
         color: $color-text-light;
     }
@@ -787,7 +792,6 @@ a:focus {
              -o-filter: grayscale(100%);
                 filter: grayscale(100%);
     }
-
     .contact-field{
         margin: 2%;
         padding: 1%;

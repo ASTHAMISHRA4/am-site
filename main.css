@@ -389,6 +389,7 @@ a:focus {
   padding: 5%;
   background-color: #141a2c;
   text-align: justify;
+  overflow-x: hidden;
 }
 #about p :hover {
   text-decoration: underline;
@@ -424,6 +425,7 @@ a:focus {
 
 #experience {
   padding: 5%;
+  overflow-x: hidden;
 }
 #experience p :hover {
   text-decoration: underline;
@@ -492,6 +494,7 @@ a:focus {
 
 #skills {
   padding: 5%;
+  overflow-x: hidden;
   background-color: #141a2c;
 }
 #skills h5 {
@@ -672,6 +675,7 @@ a:focus {
 }
 
 #education {
+  overflow-x: hidden;
   padding: 5%;
 }
 #education p :hover {
@@ -753,6 +757,9 @@ a:focus {
   margin-top: 20px;
 }
 
+#blog {
+  overflow-x: hidden;
+}
 #blog #blog-wrapper {
   padding: 5%;
 }
@@ -809,6 +816,7 @@ a:focus {
   background-color: #141a2c;
   text-align: justify;
   color: lightgrey;
+  overflow-x: hidden;
 }
 #contact h2 {
   color: lightgrey;
