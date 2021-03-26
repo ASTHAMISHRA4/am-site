@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+body{
+    background-color: #111522;
+    font-family: 'Varela', sans-serif;
+    cursor: none;
+}
+img, h1, p, .btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+h1{
+    font-size: 4em;
+    color: #288c6c;
+}
+p{
+    font-size: 1.3em;
+    color: lightgrey;
+}
+button{
+    margin: 2%;
+    background-color: #288c6c;
+}
+button:hover{
+    border: none;
+    background-color: #141a2c;
+    color: #111522;
+}
+#goback{
+    padding: 5px auto;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1.2em;
+}
+.content-wrapper{
+    position: relative;
+    transform: translateY(50%);
+}
+.failure-heading{
+    font-size: 3em;
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 3em;
+        color: #288c6c;
+    }
+    p{
+        font-size: 1em;
+        color: lightgrey;
+    }
+    .failure-heading{
+        font-size: 1.8em;
+    }
+}
