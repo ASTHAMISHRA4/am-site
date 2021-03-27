@@ -423,7 +423,7 @@ a:focus {
             border-radius: 5%;
             padding: 15px;
             box-shadow: 0 12px 19px rgba(74, 93, 150, 0.3), 0 12px 12px rgba(74, 93, 150, 0.22);
-            cursor: url("res/cur/zoom-in.cur"), auto;
+            cursor: url("../res/cur/zoom-in.cur"), auto;
         }
         .experience-text-first{
             h4{
@@ -632,7 +632,7 @@ a:focus {
             border-radius: 5%;
             padding: 15px;
             box-shadow: 0 12px 19px rgba(74, 93, 150, 0.3), 0 12px 12px rgba(74, 93, 150, 0.22);
-            cursor: url("res/cur/zoom-in.cur"), auto;
+            cursor: url("../res/cur/zoom-in.cur"), auto;
             
         }
         .education-right-wrapper{
@@ -889,7 +889,7 @@ a:focus {
         top: 0;
         right: 0;
         .icon{
-            cursor: url("res/cur/zoom-out.cur"), auto;
+            cursor: url("../res/cur/zoom-out.cur"), auto;
         }
     }
   }
